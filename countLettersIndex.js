@@ -8,7 +8,8 @@ function countLettersIndex(str) {
       letters[str.charAt(i)] = [i];
     }
   }
+delete letters[" "];
 return letters
 }
 
-console.log(countLettersIndex("banana"));
+console.log(countLettersIndex("banana banana"));

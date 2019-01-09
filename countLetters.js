@@ -1,5 +1,6 @@
-function countLetters(str) {
+function countLetters(string) {
   var letters = {}
+  var str = string.split(' ').join('');
 
   for (var i = 0; i < str.length; i++){
     if (letters[str.charAt(i)]) {
@@ -11,4 +12,4 @@ function countLetters(str) {
 return letters
 }
 
-console.log(countLetters("banana"));
+console.log(countLetters("banana banana"));
